@@ -9,6 +9,7 @@
     <title>Lab6</title>
 </head>
 <body>
+  <!--Навигационное меню-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="#">ABOUT IMAGE</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,11 +21,12 @@
               <a class="nav-link" href="#">Оптимизация изображений</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Регистрация</a>
+              <a class="nav-link" href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Регистрация</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Онлайн-чат</a>
             </li>
+            <!--Выпадающий список-->
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown" role="button" aria-expanded="false">Блог</a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -37,6 +39,33 @@
           </ul>
         </div>
       </nav>
+      <!--Модальное окно с регистрацией-->
+      <div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labeldby="exampleModal" aria-hidden="true" >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Регистрация</h5>
+            </div>
+            <div class="modal-body">
+              <p>Зарегистрируйтесь, чтобы получить дополнительные возможности на нашем сайте</p>
+              <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">E-mail</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Пароль</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+              </form>
+              <div class="modal-footer">
+                <button type="submit" class="btn btn-primary">Зарегистрироваться</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-popRpmFF9JQgExhfw5tZT4I9/CI5e2QcuUZPOVXb1m7qUmeR2b50u+YFEYe1wgzy" crossorigin="anonymous"></script>
 </body>
 </html>
